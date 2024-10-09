@@ -26,7 +26,7 @@
           <a class="nav-link" href="clubs.php">Futbol Clubs</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link" href="players-on-clubs.php">Players on Clubs</a>
+          <a class="nav-link" href="clubs-history.php">Club's History</a>
         </li>
       </ul>
     </div>
