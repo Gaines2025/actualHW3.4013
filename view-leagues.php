@@ -15,7 +15,7 @@
       <td><?php echo $league['league_ID']; ?></td>
     </tr>
   }
-    
+    }
 ?>
   </tbody>
 </table>
