@@ -23,10 +23,10 @@
           <a class="nav-link" href="leagues.php">Leagues</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link" href="teams.php">Teams</a>
+          <a class="nav-link" href="clubs.php">Futbol Clubs</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link" href="players-on-teams.php">Players on Teams</a>
+          <a class="nav-link" href="players-on-clubs.php">Players on Clubs</a>
         </li>
       </ul>
     </div>
