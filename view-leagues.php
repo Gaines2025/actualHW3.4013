@@ -1,4 +1,4 @@
-<h1>Leagues</h1>
+<h1>Futbol Leagues</h1>
 <table class="table table-striped">
   <thead>
     <th>League</th>
