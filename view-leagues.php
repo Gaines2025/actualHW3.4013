@@ -14,7 +14,7 @@
       <td><?php echo $league['country_origin']; ?></td>
       <td><?php echo $league['league_ID']; ?></td>
     </tr>
-  }
+<?php
     }
 ?>
   </tbody>
