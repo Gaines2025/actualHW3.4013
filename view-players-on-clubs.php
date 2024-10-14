@@ -7,12 +7,12 @@
   </thead>
   <tbody>
 <?php
-  while($league = $leagues->fetch_assoc()) {
+  while($club = $clubs->fetch_assoc()) {
 ?>
     <tr>
-      <td><?php echo $league['league_name']; ?></td>
-      <td><?php echo $league['country_origin']; ?></td>
-      <td><?php echo $league['league_ID']; ?></td>
+      <td><?php echo $club['club_name']; ?></td>
+      <td><?php echo $club['club_country']; ?></td>
+      <td><?php echo $club['club_ID']; ?></td>
     </tr>
 <?php
     }
