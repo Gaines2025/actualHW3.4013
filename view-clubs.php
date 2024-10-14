@@ -15,7 +15,7 @@
       <td><?php echo $club['club_country']; ?></td>
       <td><?php echo $club['club_city']; ?></td>
       <td><?php echo $club['club_ID']; ?></td>
-      <td><a href="players-on-clubs.php?id=<?php echo $club['club_name']; ?>">Clubs</a></td>
+      <td><a href="players-on-clubs.php?id=<?php echo $club['club_ID']; ?>">Clubs</a></td>
     </tr>
 <?php
     }
