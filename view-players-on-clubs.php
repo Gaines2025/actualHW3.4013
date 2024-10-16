@@ -1,18 +1,22 @@
 <h1>Players on Clubs</h1>
 <table class="table table-striped">
   <thead>
-    <th>League</th>
-    <th>Country of League</th>
-    <th>League ID#</th>
+    <th>Player Name</th>
+    <th>Country Origin of Player</th>
+    <th>Player Age</th>
+    <th>Player Current League</th>
+    <th>Player ID</th>
   </thead>
   <tbody>
 <?php
-  while($club = $clubs->fetch_assoc()) {
+  while($playerClub = $playerClubs->fetch_assoc()) {
 ?>
     <tr>
-      <td><?php echo $club['club_name']; ?></td>
-      <td><?php echo $club['club_country']; ?></td>
-      <td><?php echo $club['club_ID']; ?></td>
+      <td><?php echo $playerClub['player_name']; ?></td>
+      <td><?php echo $playerClub['player_country']; ?></td>
+      <td><?php echo $playerClub['player_age']; ?></td>
+      <td><?php echo $playerClub['player_league']; ?></td>
+      <td><?php echo $playerClub['player_ID']; ?></td>
     </tr>
 <?php
     }
