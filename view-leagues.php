@@ -17,7 +17,7 @@
       <td>
         <form method="post" action="view-clubs-in-league.php">
           <input type="hidden" name="cid" value="<?php echo $league['league_ID']; ?>">
-          <button type="button" class="btn btn-outline-primary">Teams In League</button>
+          <button type="submit" class="btn btn-outline-primary">Teams In League</button>
         </form>
       </td>
     </tr>
