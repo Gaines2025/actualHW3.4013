@@ -4,6 +4,7 @@
     <th>League</th>
     <th>Country of League</th>
     <th>League ID#</th>
+    <th></th>
   </thead>
   <tbody>
 <?php
@@ -13,7 +14,12 @@
       <td><?php echo $league['league_name']; ?></td>
       <td><?php echo $league['country_origin']; ?></td>
       <td><?php echo $league['league_ID']; ?></td>
-      <td><a href="players-playing.php?id=<?php echo $league['league_name']; ?>"> </a></td>
+      <td>
+        <form method="post" action="view-clubs-in-league.php">
+          <input type="hidden" name="cid" value="<?php echo $league['league_ID']; ?>">
+          <button type="button" class="btn btn-outline-primary">Teams In League</button>
+        </form>
+      </td>
     </tr>
 <?php
     }
