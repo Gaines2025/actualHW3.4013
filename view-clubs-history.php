@@ -14,7 +14,7 @@
       <div class="accordion-body">
         <strong>
           <ul class="list-group">
-            <li class="list-group-item"><?php echo $league['league_name']; ?></li>
+            <li class="list-group-item"><?php echo "The league the country is from is: $league['league_name']; ?></li>
           </ul>
         </strong>
     <?php
@@ -22,11 +22,11 @@
       while($clubsInLeague = $clubsInLeagues->fetch_assoc())
       {
     ?>
-        <strong>
+        <p>
           <ul class="list-group">
             <li class="list-group-item"><?php echo $clubsInLeague['club_name']; ?></li>
           </ul>
-        </strong>
+        </p>
     <?php
       }  
     ?>
