@@ -12,7 +12,18 @@
     </h2>
     <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>This is the first item's accordion body.</strong>
+    <?php
+      $clubsInLeagues = selectClubsInLeague($league['league_ID']);
+      while($clubsInLeague = $clubsInLeagues->fetch_assoc())
+      {
+    ?>
+        <strong>
+          kdbvdkjvdkvbsdvkjbsvk;jsv;jdsv;sdkjvnnsad;vjn
+        </strong>
+    <?php
+      }  
+    ?>
+        
       </div>
     </div>
 <?php
