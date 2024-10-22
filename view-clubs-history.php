@@ -7,7 +7,7 @@
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        <?php echo $league['league_ID']; ?><p>)</p>
+        <?php echo $league['league_ID']; ?><h2>)</h2>
         <?php echo $league['league_name']; ?>
       </button>
     </h2>
