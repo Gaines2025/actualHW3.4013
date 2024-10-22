@@ -1,4 +1,4 @@
-<h1>Futbol Clubs</h1>
+<h1>Leagues + Clubs</h1>
 <div class="accordion" id="accordionExample">
 <?php
   while($league = $leagues->fetch_assoc()) 
@@ -18,7 +18,13 @@
       {
     ?>
         <strong>
-          kdbvdkjvdkvbsdvkjbsvk;jsv;jdsv;sdkjvnnsad;vjn
+          <ul class="list-group">
+            <li class="list-group-item"><?php echo "The country is from: " . $league['league_country']; ?></li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item">And a fifth one</li>
+          </ul>
         </strong>
     <?php
       }  
