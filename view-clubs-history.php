@@ -1,5 +1,8 @@
 <h1>Futbol Clubs</h1>
 <div class="accordion" id="accordionExample">
+<?php
+  while($club = $clubs->fetch_assoc()) {
+?>
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -11,10 +14,6 @@
         <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
       </div>
     </div>
-<?php
-  while($club = $clubs->fetch_assoc()) {
-?>
-    
     <tr>
       <td><?php echo $club['club_name']; ?></td>
       <td><?php echo $club['club_country']; ?></td>
