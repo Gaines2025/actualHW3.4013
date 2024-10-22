@@ -4,7 +4,7 @@ require_once("model-clubs-history.php");
 
 $pageTitle = "Soccer Clubs";
 include "view-header.php";
-$clubs = selectClubs();
+$leagues = selectLeagues();
 include "view-clubs-history.php";
 include "view-footer.php";
 ?>
