@@ -12,6 +12,11 @@
     </h2>
     <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
       <div class="accordion-body">
+        <strong>
+          <ul class="list-group">
+            <li class="list-group-item"><?php echo $league['league_name']; ?></li>
+          </ul>
+        </strong>
     <?php
       $clubsInLeagues = selectClubsInLeague($league['league_ID']);
       while($clubsInLeague = $clubsInLeagues->fetch_assoc())
