@@ -14,7 +14,7 @@
       <div class="accordion-body">
         <strong>
           <ul class="list-group">
-            <li class="list-group-item"><?php echo "The league the country is from is: $league['league_name']; ?></li>
+            <li class="list-group-item"><?php echo "The league the country is from is: " . $league['league_name']; ?></li>
           </ul>
         </strong>
     <?php
