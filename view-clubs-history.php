@@ -19,7 +19,7 @@
     ?>
         <strong>
           <ul class="list-group">
-            <li class="list-group-item"><?php echo "The country is from: " . $league['league_country']; ?></li>
+            <li class="list-group-item"><?php echo "The country is from: " . $league['country_origin']; ?></li>
             <li class="list-group-item">A second item</li>
             <li class="list-group-item">A third item</li>
             <li class="list-group-item">A fourth item</li>
