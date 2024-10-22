@@ -20,7 +20,7 @@
         <strong>
           <ul class="list-group">
             <li class="list-group-item"><?php echo "The country is from: " . $league['country_origin']; ?></li>
-            <li class="list-group-item"><?php echo $club['club_name']; ?></li>
+            <li class="list-group-item"><?php echo $clubsInLeague['club_name']; ?></li>
           </ul>
         </strong>
     <?php
