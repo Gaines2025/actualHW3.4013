@@ -12,4 +12,33 @@ function selectClubs() {
         throw $e;
     }
 }
+
+function updateClubs($cName, $cCity, $cCountry) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("INSERT INTO `Club` (`club_name`, `club_city`, `club_country`) VALUES (?, ?, ?)");
+        $stmt->bind_param("sss", $cName, $cCity, $cCountry);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+?>
+
+function insertClubs($cName, $cCity, $cCountry) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("INSERT INTO `Club` (`club_name`, `club_city`, `club_country`) VALUES (?, ?, ?)");
+        $stmt->bind_param("sss", $cName, $cCity, $cCountry);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
 ?>
