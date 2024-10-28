@@ -26,7 +26,6 @@ function updateClubs($cName, $cCity, $cCountry, $cid) {
         throw $e;
     }
 }
-?>
 
 function insertClubs($cName, $cCity, $cCountry) {
     try {
