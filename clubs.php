@@ -5,7 +5,7 @@ require_once("model-clubs.php");
 $pageTitle = "Soccer Clubs";
 include "view-header.php";
 
-if isset($_POST['actionType'])) {
+if (isset($_POST['actionType'])) {
     switch ($_POST['actionType']) {
       case "Add":
         insertClubs($_POST['cName'], $_POST['cCity'], $_POST['cCountry']);
