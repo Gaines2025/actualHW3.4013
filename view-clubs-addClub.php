@@ -25,6 +25,7 @@
             <label for="cCountry" class="form-label">Club Country</label>
             <input type="text" class="form-control" id="cName" name="cName">
           </div>
+            <input type="hidden" name="actionType" value="Add">
           <button type="submit" class="btn btn-primary">Save</button>
         </form>
       </div>
