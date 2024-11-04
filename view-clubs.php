@@ -30,6 +30,11 @@ include "view-clubs-addClub.php";
       <td><?php echo $club['club_ID']; ?></td>
       <td><a href="players-on-clubs.php?id=<?php echo $club['club_ID']; ?>">Clubs</a></td>
       <td>
+        <?php
+          include "view-clubs-editClub.php";
+        ?>
+        
+        
       </td>
       <td>
         <form method="post" action="">
