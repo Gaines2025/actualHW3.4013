@@ -24,7 +24,7 @@ if (isset($_POST['actionType'])) {
         }
         break;
       case "Edit":
-        if (insertClubs($_POST['cName'], $_POST['cCity'], $_POST['cCountry'], $_POST['cid'])) {
+        if (updateClubs($_POST['cName'], $_POST['cCity'], $_POST['cCountry'], $_POST['cid'])) {
             echo '<div class="alert alert-success" role="alert">Club has succesfully been added!</div>';
             }
         else {
