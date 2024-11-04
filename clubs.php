@@ -9,10 +9,10 @@ if (isset($_POST['actionType'])) {
     switch ($_POST['actionType']) {
       case "Add":
         if (insertClubs($_POST['cName'], $_POST['cCity'], $_POST['cCountry'])) {
-            echo '<div class="alert alert-success" role="alert">Club has succesfully been added!</div>"';
+            echo '<div class="alert alert-success" role="alert">Club has succesfully been added!</div>';
             }
         else {
-            echo '<div class="alert alert-danger" role="alert">Error Adding Club.</div>"';
+            echo '<div class="alert alert-danger" role="alert">Error Adding Club.</div>';
         }
         
         break;
