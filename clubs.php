@@ -23,6 +23,14 @@ if (isset($_POST['actionType'])) {
             echo '<div class="alert alert-danger" role="alert">Error Deleting Club.</div>';
         }
         break;
+      case "Edit":
+        if (insertClubs($_POST['cName'], $_POST['cCity'], $_POST['cCountry'], $_POST['cid'])) {
+            echo '<div class="alert alert-success" role="alert">Club has succesfully been added!</div>';
+            }
+        else {
+            echo '<div class="alert alert-danger" role="alert">Error Adding Club.</div>';
+        }
+        break;
   }
 }
   
