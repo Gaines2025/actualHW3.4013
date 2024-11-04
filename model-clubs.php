@@ -44,7 +44,7 @@ function insertClubs($cName, $cCity, $cCountry) {
 function deleteClubs($cid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("delete from club where club_id=?");
+        $stmt = $conn->prepare("delete from 'club' where club_id=?");
         $stmt->bind_param("i", $cid);
         $success = $stmt->execute();
         $conn->close();
