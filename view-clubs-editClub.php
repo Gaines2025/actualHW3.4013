@@ -15,7 +15,7 @@
         <form method="post" action="">
           <div class="mb-3">
             <label for="cName<?php echo $club['club_ID']; ?>" class="form-label">Club Name</label>
-            <input type="text" class="form-control" id="cName<?php echo $club['club_ID']; ?>" name="cName" value="<?php echo $club['club_ID']; ?>">
+            <input type="text" class="form-control" id="cName<?php echo $club['club_ID']; ?>" name="cName" value="<?php echo $club['club_name']; ?>">
           </div>
           <div class="mb-3">
             <label for="cCity<?php echo $club['club_ID']; ?>" class="form-label">Club City</label>
@@ -23,7 +23,7 @@
           </div>
           <div class="mb-3">
             <label for="cCountry" class="form-label">Club Country</label>
-            <input type="text" class="form-control" id="cName" name="cCountry">
+            <input type="text" class="form-control" id="cName" name="cCountry" value="<?php echo $club['club_country']; ?>">
           </div>
             <input type="hidden" name="cid" value="<?php echo $club['club_ID']; ?>">
             <input type="hidden" name="actionType" value="Edit">
