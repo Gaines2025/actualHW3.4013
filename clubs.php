@@ -25,10 +25,10 @@ if (isset($_POST['actionType'])) {
         break;
       case "Edit":
         if (updateClubs($_POST['cName'], $_POST['cCity'], $_POST['cCountry'], $_POST['cid'])) {
-            echo '<div class="alert alert-success" role="alert">Club has succesfully been added!</div>';
+            echo '<div class="alert alert-success" role="alert">Club has been edited!</div>';
             }
         else {
-            echo '<div class="alert alert-danger" role="alert">Error Adding Club.</div>';
+            echo '<div class="alert alert-danger" role="alert">Error editing Club.</div>';
         }
         break;
   }
