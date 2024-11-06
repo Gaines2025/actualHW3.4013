@@ -16,7 +16,7 @@ function selectClubs() {
 function updateClubs($cName, $cCity, $cCountry, $cid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update `Club` set `club_name` = ?, `club_city` = ?, `club_country` = ?, where 'club_id' = ?");
+        $stmt = $conn->prepare("update `Club` set `club_name` = ?, `club_city` = ?, `club_country` = ?, where club_id = ?");
         $stmt->bind_param("sssi", $cName, $cCity, $cCountry, $cid);
         $success = $stmt->execute();
         $conn->close();
