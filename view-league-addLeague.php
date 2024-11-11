@@ -14,12 +14,12 @@
       <div class="modal-body">
         <form method="post" action="">
           <div class="mb-3">
-            <label for="cName" class="form-label">League Name</label>
-            <input type="text" class="form-control" id="cName" name="cName">
+            <label for="lName" class="form-label">League Name</label>
+            <input type="text" class="form-control" id="lName" name="lName">
           </div>
           <div class="mb-3">
-            <label for="cCity" class="form-label">League Country</label>
-            <input type="text" class="form-control" id="cCity" name="cCity">
+            <label for="lCountry" class="form-label">League Country</label>
+            <input type="text" class="form-control" id="lCountry" name="lCountry">
           </div>
             <input type="hidden" name="actionType" value="Add">
           <button type="submit" class="btn btn-primary">Save</button>
