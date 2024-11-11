@@ -12,4 +12,46 @@ function selectLeagues() {
         throw $e;
     }
 }
+
+function updateLeagues($lName, $lCountry, $lid) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("update league set league_name = ?, country_origin = ? where club_id = ?");
+        $stmt->bind_param("ssi", $lName, $lCountry, $cid);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+function insertLeagues($lName, $lCountry) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("INSERT INTO `league` (`league_name`, `country_origin`) VALUES (?, ?)");
+        $stmt->bind_param("ss", $lName, $lCountry);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+function deleteLeagues($lid) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("delete from league where league_ID=?");
+        $stmt->bind_param("i", $lid);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
 ?>
