@@ -24,7 +24,7 @@ include "view-league-addLeague.php";
       </td>
        <td>
         <form method="post" action="">
-          <input type="hidden" name="cid" value="<?php echo $league['league_ID']; ?>">
+          <input type="hidden" name="lid" value="<?php echo $league['league_ID']; ?>">
           <input type="hidden" name="actionType" value="Delete">
           <button type="submit" class="btn btn-outline-primary" onclick="return confirm('Are you sure?');">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ban" viewBox="0 0 16 16">
@@ -34,7 +34,7 @@ include "view-league-addLeague.php";
       </td>
       <td>
         <form method="post" action="clubs-in-league.php">
-          <input type="hidden" name="cid" value="<?php echo $league['league_ID']; ?>">
+          <input type="hidden" name="lid" value="<?php echo $league['league_ID']; ?>">
           <button type="submit" class="btn btn-outline-primary">Teams In League</button>
         </form>
       </td>
