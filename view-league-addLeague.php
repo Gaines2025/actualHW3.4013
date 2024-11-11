@@ -4,7 +4,7 @@
               </svg>
 </button>
 
-<div class="modal fade" id="newleagueModal" tabindex="-1" aria-labelledby="newLeagueModalLabel" aria-hidden="true">
+<div class="modal fade" id="newLeagueModal" tabindex="-1" aria-labelledby="newLeagueModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
