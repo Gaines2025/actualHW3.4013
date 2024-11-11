@@ -4,11 +4,11 @@
   </svg>
 </button>
 
-<div class="modal fade" id="editClubModal<?php echo $club['club_ID']; ?>" tabindex="-1" aria-labelledby="editClubModalLabel<?php echo $club['club_ID']; ?>" aria-hidden="true">
+<div class="modal fade" id="editClubInLeagueModal<?php echo $club['club_ID']; ?>" tabindex="-1" aria-labelledby="editClubInLeagueModalLabel<?php echo $club['club_ID']; ?>" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="editClubModalLabel<?php echo $club['club_ID']; ?>">Edit Club</h1>
+        <h1 class="modal-title fs-5" id="editClubInLeagueModalLabel<?php echo $club['club_ID']; ?>">Edit Club</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -23,7 +23,11 @@
           </div>
           <div class="mb-3">
             <label for="cCountry" class="form-label">Club Country</label>
-            <input type="text" class="form-control" id="cName" name="cCountry" value="<?php echo $club['club_country']; ?>">
+            <input type="text" class="form-control" id="cCountry" name="cCountry" value="<?php echo $club['club_country']; ?>">
+          </div>
+          <div class="mb-3">
+            <label for="cLeague" class="form-label">Club's League</label>
+            <input type="text" class="form-control" id="cLeague" name="cLeague" value="<?php echo $league['league_ID']; ?>">
           </div>
             <input type="hidden" name="cid" value="<?php echo $club['club_ID']; ?>">
             <input type="hidden" name="actionType" value="Edit">
