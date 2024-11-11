@@ -15,13 +15,13 @@
         <form method="post" action="">
           <div class="mb-3">
             <label for="cName<?php echo $league['league_ID']; ?>" class="form-label">League Name</label>
-            <input type="text" class="form-control" id="cName<?php echo $league['league_ID']; ?>" name="cName" value="<?php echo $league['league_name']; ?>">
+            <input type="text" class="form-control" id="lName<?php echo $league['league_ID']; ?>" name="lName" value="<?php echo $league['league_name']; ?>">
           </div>
           <div class="mb-3">
             <label for="cCity<?php echo $league['league_ID']; ?>" class="form-label">League Country</label>
-            <input type="text" class="form-control" id="cCity<?php echo $league['league_ID']; ?>" name="cCity" value="<?php echo $league['country_origin']; ?>">
+            <input type="text" class="form-control" id="lCountry<?php echo $league['league_ID']; ?>" name="lCountry" value="<?php echo $league['country_origin']; ?>">
           </div>
-            <input type="hidden" name="cid" value="<?php echo $league['league_ID']; ?>">
+            <input type="hidden" name="lid" value="<?php echo $league['league_ID']; ?>">
             <input type="hidden" name="actionType" value="Edit">
           <button type="submit" class="btn btn-primary">Save</button>
         </form>
