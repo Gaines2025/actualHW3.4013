@@ -1,6 +1,6 @@
 <h1>Futbol Leagues</h1>
 <?php
-include "view-clubs-addLeague.php";
+include "view-league-addLeague.php";
 ?>
 <table class="table table-striped">
   <thead>
@@ -19,7 +19,7 @@ include "view-clubs-addLeague.php";
       <td><?php echo $league['league_ID']; ?></td>
       <td>
         <?php
-          include "view-clubs-editLeague.php";
+          include "view-league-editLeague.php";
         ?>  
       </td>
        <td>
