@@ -8,27 +8,27 @@ include "view-header.php";
 if (isset($_POST['actionType'])) {
     switch ($_POST['actionType']) {
       case "Add":
-        if (insertClubs($_POST['cName'], $_POST['cCity'], $_POST['cCountry'])) {
-            echo '<div class="alert alert-success" role="alert">Club has succesfully been added!</div>';
+        if (insertLeagues($_POST['lName'], $_POST['lCountry'])) {
+            echo '<div class="alert alert-success" role="alert">League has succesfully been added!</div>';
             }
         else {
-            echo '<div class="alert alert-danger" role="alert">Error Adding Club.</div>';
+            echo '<div class="alert alert-danger" role="alert">Error Adding League.</div>';
         }
         break;
       case "Delete":
-        if (deleteClubs($_POST['cid'])) {
-            echo '<div class="alert alert-success" role="alert">Club Deleted!</div>';
+        if (deleteLeagues($_POST['lid'])) {
+            echo '<div class="alert alert-success" role="alert">League Deleted!</div>';
             }
         else {
-            echo '<div class="alert alert-danger" role="alert">Error Deleting Club.</div>';
+            echo '<div class="alert alert-danger" role="alert">Error Deleting League.</div>';
         }
         break;
       case "Edit":
-        if (updateClubs($_POST['cName'], $_POST['cCity'], $_POST['cCountry'], $_POST['cid'])) {
-            echo '<div class="alert alert-success" role="alert">Club has been edited!</div>';
+        if (updateLeagues($_POST['lName'], $_POST['lCountry'], $_POST['lid'])) {
+            echo '<div class="alert alert-success" role="alert">League has been edited!</div>';
             }
         else {
-            echo '<div class="alert alert-danger" role="alert">Error editing Club.</div>';
+            echo '<div class="alert alert-danger" role="alert">Error editing league.</div>';
         }
         break;
   }
