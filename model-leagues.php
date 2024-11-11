@@ -16,7 +16,7 @@ function selectLeagues() {
 function updateLeagues($lName, $lCountry, $lid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update league set league_name = ?, country_origin = ? where club_id = ?");
+        $stmt = $conn->prepare("update league set league_name = ?, country_origin = ? where league_ID = ?");
         $stmt->bind_param("ssi", $lName, $lCountry, $cid);
         $success = $stmt->execute();
         $conn->close();
