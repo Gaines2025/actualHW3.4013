@@ -30,7 +30,7 @@ function updatePlayers($pName, $pCountry, $pAge, $pLeague, $pid) {
 function insertPlayers($pName, $pCountry, $pAge, $pLeague) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `Player` (`player_name`, `player_country`, `player_age`, `player_league`, `club_ID`, `league_ID`) VALUES (?, ?, ?, NULL, NULL)");
+        $stmt = $conn->prepare("INSERT INTO Player ('player_name', 'player_country', 'player_age', 'player_league', 'club_ID', 'league_ID') VALUES (?, ?, ?, NULL, NULL)");
         $stmt->bind_param("ssis", $pName, $pCountry, $pAge, $pLeague);
         $success = $stmt->execute();
         $conn->close();
