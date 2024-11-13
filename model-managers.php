@@ -13,7 +13,7 @@ function selectManagers() {
     }
 }
 
-function updateManagers($mName, $mCountry, $mClub, , $mAge, $mid) {
+function updateManagers($mName, $mCountry, $mClub, $mAge, $mid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("UPDATE `Manager` SET manager_name = ?, manager_age = ?, manager_club = ?, manager_country = ? where manager_ID = ?");
