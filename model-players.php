@@ -16,7 +16,7 @@ function selectPlayers() {
 function updatePlayers($pName, $pCountry, $pAge, $pLeague, $pid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update Player set player_name = ?, player_country = ?, player_age = ?, player_league = ?, where player_ID = ?");
+        $stmt = $conn->prepare("update Player set player_name = ?, player_country = ?, player_age = ?, player_league = ? where player_ID = ?");
         $stmt->bind_param("ssisi", $pName, $pCountry, $pAge, $pLeague, $pid);
         $success = $stmt->execute();
         $conn->close();
