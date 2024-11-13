@@ -29,7 +29,7 @@
           <a class="nav-link" href="players.php">Players</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link" href="clubs-history.php">Teams within Leagues</a>
+          <a class="nav-link" href="coaches.php">Coaches</a>
         </li>
       </ul>
     </div>
