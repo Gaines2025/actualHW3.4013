@@ -1,6 +1,6 @@
 <h1>Futbol Players</h1>
 <?php
-include view-players-addPlayer.php
+include "view-players-addPlayer.php"
 ?>
 <table class="table table-striped">
   <thead>
