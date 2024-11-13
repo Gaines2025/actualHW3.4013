@@ -29,7 +29,7 @@
           <a class="nav-link" href="players.php">Players</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link" href="coaches.php">Coaches</a>
+          <a class="nav-link" href="managers.php">Managers</a>
         </li>
       </ul>
     </div>
