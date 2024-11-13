@@ -20,7 +20,7 @@ include view-players-addPlayer.php
       <td><?php echo $player['player_age']; ?></td>
       <td>
         <?php
-          include "view-clubs-editClub.php";
+          include "view-players-editPlayer.php";
         ?>
       
       </td>
