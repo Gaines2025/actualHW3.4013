@@ -1,7 +1,4 @@
 <h1>Clubs In League</h1>
-<?php
-include "view-clubsinleague-addClub.php";
-?>
 <table class="table table-striped">
   <thead>
     <th>Club Name</th>
@@ -19,9 +16,6 @@ include "view-clubsinleague-addClub.php";
       <td><?php echo $clubsInLeague['club_country']; ?></td>
       <td><?php echo $clubsInLeague['club_ID']; ?></td>
     </tr>
-    <?php
-      include "view-clubsinleague-editClub.php";
-    ?>
 <?php
     }
 ?>
