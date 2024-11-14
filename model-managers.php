@@ -44,7 +44,7 @@ function insertManagers($mName, $mCountry, $mClub, $mAge) {
 function deleteManagers($mid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("delete from Club where manager_ID=?");
+        $stmt = $conn->prepare("delete from Manager where manager_ID=?");
         $stmt->bind_param("i", $mid);
         $success = $stmt->execute();
         $conn->close();
