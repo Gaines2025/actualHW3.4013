@@ -16,7 +16,7 @@ if (isset($_POST['actionType'])) {
         }
         break;
       case "Delete":
-        if (deleteClubs($_POST['mid'])) {
+        if (deleteManagers($_POST['mid'])) {
             echo '<div class="alert alert-success" role="alert">Manager Deleted!</div>';
             }
         else {
@@ -24,7 +24,7 @@ if (isset($_POST['actionType'])) {
         }
         break;
       case "Edit":
-        if (updateClubs($_POST['mName'], $_POST['mClub'], $_POST['mCountry'], $_POST['mAge'], $_POST['mid'])) {
+        if (updateManagers($_POST['mName'], $_POST['mClub'], $_POST['mCountry'], $_POST['mAge'], $_POST['mid'])) {
             echo '<div class="alert alert-success" role="alert">Manager has been edited!</div>';
             }
         else {
