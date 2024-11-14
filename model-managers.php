@@ -17,7 +17,7 @@ function updateManagers($mName, $mCountry, $mClub, $mAge, $mid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("UPDATE Manager SET manager_name = ?, manager_age = ?, manager_club = ?, manager_country = ? where manager_ID = ?");
-        $stmt->bind_param("sssi", $mName, $mCountry, $mClub, $mAge);
+        $stmt->bind_param("sssii", $mName, $mCountry, $mClub, $mAge, $mid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
