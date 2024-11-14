@@ -27,7 +27,7 @@ function updateManagers($mName, $mCountry, $mClub, $mAge, $mid) {
     }
 }
 
-function insertClubs($mName, $mCountry, $mClub, $mAge) {
+function insertManagers($mName, $mCountry, $mClub, $mAge) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `Manager` ('manager_ID', 'manager_name', 'manager_age', 'manager_club', 'manager_country') VALUES (NULL, ?, ?, ?, ?)");
@@ -41,7 +41,7 @@ function insertClubs($mName, $mCountry, $mClub, $mAge) {
     }
 }
 
-function deleteClubs($mid) {
+function deleteManagers($mid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("delete from Club where manager_ID=?");
