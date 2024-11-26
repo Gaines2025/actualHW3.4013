@@ -25,10 +25,6 @@
             <label for="cCountry" class="form-label">Club Country</label>
             <input type="text" class="form-control" id="cCountry" name="cCountry" value="<?php echo $club['club_country']; ?>">
           </div>
-          <div class="mb-3">
-            <label for="cLeague" class="form-label">Club's League</label>
-            <input type="text" class="form-control" id="cLeague" name="cLeague" value="<?php echo $league['league_ID']; ?>">
-          </div>
             <input type="hidden" name="cid" value="<?php echo $club['club_ID']; ?>">
             <input type="hidden" name="actionType" value="Edit">
           <button type="submit" class="btn btn-primary">Save</button>
