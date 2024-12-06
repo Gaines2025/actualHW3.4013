@@ -23,7 +23,10 @@
           </div>
           <div class="mb-3">
             <label for="mClub" class="form-label">Manager Club</label>
-            <input type="text" class="form-control" id="mClub" name="mClub">
+<?php
+$leagueNames = selectLeaguesForInput();
+include "view-leaguesList.php";
+?>
           </div>
           <div class="mb-3">
             <label for="mAge" class="form-label">Manager Age</label>
