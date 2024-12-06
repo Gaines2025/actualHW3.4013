@@ -27,7 +27,10 @@
           </div>
           <div class="mb-3">
             <label for="pLeague<?php echo $player['player_league']; ?>" class="form-label">Player League</label>
-            <input type="text" class="form-control" id="pLeague<?php echo $player['player_league']; ?>" name="pLeague" value="<?php echo $player['player_league']; ?>">
+<?php
+$leagueNames = selectLeaguesForInput();
+include "view-leaguesList.php";
+?>
           </div>
             <input type="hidden" name="pid" value="<?php echo $player['player_ID']; ?>">
             <input type="hidden" name="actionType" value="Edit">
