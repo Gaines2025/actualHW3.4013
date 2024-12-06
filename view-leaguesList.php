@@ -2,7 +2,7 @@
 <?php
 while ($leagueStuff = $leagueNames->fetch_assoc()) {
 ?>
-    <option value="<?php echo $leagueNames['league_id']; ?>"><?php echo $leagueNames['league_name']; ?></option>
+    <option value="<?php echo $leagueStuff['league_id']; ?>"><?php echo $leagueStuff['league_name']; ?></option>
 <?php
 }
 ?>
