@@ -13,6 +13,20 @@ function selectManagers() {
     }
 }
 
+function selectLeaguesForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT league_ID, league_name from `league` order by league_name");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
 function updateManagers($mName, $mCountry, $mClub, $mAge, $mid) {
     try {
         $conn = get_db_connection();
