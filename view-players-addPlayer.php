@@ -19,7 +19,10 @@
           </div>
           <div class="mb-3">
             <label for="pLeague" class="form-label">Player League</label>
-            <input type="text" class="form-control" id="pLeague" name="pLeague">
+<?php
+$leagueNames = selectLeaguesForInput();
+include "view-leaguesList.php";
+?>
           </div>
           <div class="mb-3">
             <label for="pCountry" class="form-label">Player Country</label>
