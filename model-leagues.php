@@ -13,6 +13,20 @@ function selectLeagues() {
     }
 }
 
+function selectLeaguesForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT league_ID, league_name FROM league order by league_name");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
 function updateLeagues($lName, $lCountry, $lid) {
     try {
         $conn = get_db_connection();
