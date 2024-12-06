@@ -16,7 +16,7 @@ function selectPlayers() {
 function selectLeaguesForInput() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT league_ID, league_name from league order by league_name");
+        $stmt = $conn->prepare("SELECT league_ID, league_name from `league` order by league_name");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
