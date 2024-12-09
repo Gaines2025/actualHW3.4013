@@ -11,34 +11,37 @@
     </div>
 
     <script>
-        // Get the context of the canvas
         const ctx = document.getElementById('doughnutChart').getContext('2d');
 
-        // Data for the Doughnut Chart
         const data = {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple'],
+            labels: ['Norway', 'England', 'Argentina', 'Spain', 'Georgia', 'Germany', 'France', 'Uruguay'],
             datasets: [{
-                label: 'Dataset 1',
-                data: [300, 50, 100, 40, 120],
+                label: 'Num of Players in Country',
+                data: [1, 1, 1, 1, 1, 1, 1, 2],
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0.6)',
-                    'rgba(54, 162, 235, 0.6)',
-                    'rgba(255, 206, 86, 0.6)',
-                    'rgba(75, 192, 192, 0.6)',
-                    'rgba(153, 102, 255, 0.6)'
+                    'rgba(255, 99, 132, 0.6)',  
+                    'rgba(54, 162, 235, 0.6)',  
+                    'rgba(255, 206, 86, 0.6)',  
+                    'rgba(75, 192, 192, 0.6)',  
+                    'rgba(153, 102, 255, 0.6)',  
+                    'rgba(255, 159, 64, 0.6)',  
+                    'rgba(201, 203, 207, 0.6)',  
+                    'rgba(100, 255, 100, 0.6)'
                 ],
                 borderColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)'
+                    'rgba(255, 99, 132, 0.6)',  
+                    'rgba(54, 162, 235, 0.6)',  
+                    'rgba(255, 206, 86, 0.6)',  
+                    'rgba(75, 192, 192, 0.6)',  
+                    'rgba(153, 102, 255, 0.6)',  
+                    'rgba(255, 159, 64, 0.6)',  
+                    'rgba(201, 203, 207, 0.6)',  
+                    'rgba(100, 255, 100, 0.6)'
                 ],
                 borderWidth: 1
             }]
         };
 
-        // Configuration for the Doughnut Chart
         const config = {
             type: 'doughnut',
             data: data,
@@ -55,7 +58,6 @@
             }
         };
 
-        // Render the Doughnut Chart
         new Chart(ctx, config);
     </script>
 </body>
