@@ -16,8 +16,9 @@
     data: {
       labels: [
 <?php
+$players = selectPlayers();
 while ($player = $players->fetch_assoc()) {
-  echo $player['player_name'] . ", ";
+  echo "'" . $player['player_name'] . ", ";
 }
 ?>
       ],
