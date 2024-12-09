@@ -32,7 +32,7 @@
           <a class="nav-link" href="managers.php">Managers</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="homePlayerBarChart.php">JavaScript</a>
+          <a class="nav-link" href="homePlayerAgeChart.php">JavaScript</a>
         </li>
       </ul>
     </div>
