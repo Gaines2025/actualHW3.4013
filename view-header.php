@@ -32,7 +32,16 @@
           <a class="nav-link" href="managers.php">Managers</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="homePlayerAgeChart.php">JavaScript</a>
+          <a class="nav-link" href="homePlayerAgeChart.php">JavaScript1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="homeManagerAgeChart.php">JavaScript2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="homeLeaguesAmountChart.php">JavaScript3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="homeCountryAmountChart.php">JavaScript4</a>
         </li>
       </ul>
     </div>
