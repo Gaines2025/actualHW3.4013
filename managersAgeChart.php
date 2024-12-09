@@ -11,10 +11,10 @@
   new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      labels: ['Pep Guardiola', 'Manuel Pellegrini', 'Gary ONeil', 'Oliver Glasner', 'Marco Rose', 'Vincent Kompany'],
       datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
+        label: 'Manager Age',
+        data: [45, 71, 41, 50, 48, 38],
         borderWidth: 1
       }]
     },
