@@ -31,6 +31,9 @@
          <li class="nav-item">
           <a class="nav-link" href="managers.php">Managers</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="playerBarChart.php">JavaScript</a>
+        </li>
       </ul>
     </div>
   </div>
