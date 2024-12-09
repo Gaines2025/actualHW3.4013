@@ -1,4 +1,4 @@
-<h1>Player Ages</h1>
+<h1>Manager Ages</h1>
 <div>
   <canvas id="myChart"></canvas>
 </div>
