@@ -3,6 +3,9 @@
   <canvas id="myChart"></canvas>
 </div>
 
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
@@ -11,10 +14,22 @@
   new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      labels: [
+<?php
+while ($player = $players->fetch_assoc()) {
+  echo $player['player_name'] . ", ";
+}
+?>
+      ],
       datasets: [{
         label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
+        data: [
+<?php
+while ($player = $players->fetch_assoc()) {
+  echo $player['player_age'] . ", ";
+}
+?>
+        ],
         borderWidth: 1
       }]
     },
