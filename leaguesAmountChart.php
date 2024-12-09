@@ -16,7 +16,7 @@
         const data = {
             labels: ['England', 'Spain', 'Germany', 'Italy', 'France', 'United States'],
             datasets: [{
-                label: 'Percentage of Clubs in Country',
+                label: 'Num of Clubs in Country',
                 data: [3, 1, 1, 2, 2, 1],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.6)',
