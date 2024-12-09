@@ -11,34 +11,33 @@
     </div>
 
     <script>
-        // Get the context of the canvas
         const ctx = document.getElementById('doughnutChart').getContext('2d');
 
-        // Data for the Doughnut Chart
         const data = {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple'],
+            labels: ['England', 'Spain', 'Germany', 'Italy', 'France', 'United States'],
             datasets: [{
-                label: 'Dataset 1',
-                data: [300, 50, 100, 40, 120],
+                label: 'Percentage of Clubs in Country',
+                data: [3, 1, 1, 2, 2, 1],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.6)',
                     'rgba(54, 162, 235, 0.6)',
                     'rgba(255, 206, 86, 0.6)',
                     'rgba(75, 192, 192, 0.6)',
-                    'rgba(153, 102, 255, 0.6)'
+                    'rgba(153, 102, 255, 0.6)',
+                    'rgba(200, 99, 132, 1)'
                 ],
                 borderColor: [
                     'rgba(255, 99, 132, 1)',
                     'rgba(54, 162, 235, 1)',
                     'rgba(255, 206, 86, 1)',
                     'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)'
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(200, 99, 132, 1)'
                 ],
                 borderWidth: 1
             }]
         };
 
-        // Configuration for the Doughnut Chart
         const config = {
             type: 'doughnut',
             data: data,
@@ -55,7 +54,6 @@
             }
         };
 
-        // Render the Doughnut Chart
         new Chart(ctx, config);
     </script>
 </body>
