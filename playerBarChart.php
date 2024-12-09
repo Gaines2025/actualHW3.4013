@@ -29,10 +29,8 @@
       }
     }
   });
-</script>
 
-<script>
-  const ctx = document.getElementById('myChart');
+const ctx = document.getElementById('my1Chart');
 
   new Chart(ctx, {
     type: 'doughnut',
